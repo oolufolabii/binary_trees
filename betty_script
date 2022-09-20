@@ -1,0 +1,4 @@
+#!/bin/bash
+# Script to check all C files in this repo and run the betty checker on them.
+
+find . -name "*.c" | xargs betty

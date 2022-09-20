@@ -33,8 +33,8 @@ void leaf_counter(const binary_tree_t *tree, size_t *n)
 
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
-	size_t counter = 0;
+	size_t n = 0;
 
-	leaf_counter(tree, &counter);
-	return (counter);
+	leaf_counter(tree, &n);
+	return (n);
 }

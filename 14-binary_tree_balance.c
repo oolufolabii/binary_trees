@@ -1,7 +1,5 @@
 #include "binary_trees.h"
 
-#include "binary_trees.h"
-
 /**
  * node_height - calculates the height of a binary tree's node.
  * @tree: The binary tree.

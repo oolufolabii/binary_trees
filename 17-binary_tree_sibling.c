@@ -1,10 +1,10 @@
 #include "binary_trees.h"
 
 /**
- * @brief 
+ * binary_tree_sibling -
  * 
- * @param node 
- * @return binary_tree_t* 
+ * @node:
+ * Return: 
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {

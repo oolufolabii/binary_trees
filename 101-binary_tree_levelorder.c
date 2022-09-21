@@ -40,7 +40,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_post_order - goes through a binary tree using post-order traverse
+ * binary_tree_post_order - goes through a binary tree via post-order traverse
  * @tree: tree to traverse
  * @func: pointer to a function to call for each node
  * @level: the level of the tree to call func upon

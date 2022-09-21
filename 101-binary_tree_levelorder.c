@@ -40,20 +40,20 @@ size_t binary_tree_height(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_postorder - goes through a binary tree using post-order traverse
+ * binary_tree_post_order - goes through a binary tree using post-order traverse
  * @tree: tree to traverse
  * @func: pointer to a function to call for each node
  * @level: the level of the tree to call func upon
  */
-void binary_tree_postorder(const binary_tree_t *tree,
+void binary_tree_post_order(const binary_tree_t *tree,
 						   void (*func)(int), size_t level)
 {
 	if (level == 1)
 		func(tree->n);
 	else
 	{
-		binary_tree_postorder(tree->left, func, level - 1);
-		binary_tree_postorder(tree->right, func, level - 1);
+		binary_tree_post_order(tree->left, func, level - 1);
+		binary_tree_post_order(tree->right, func, level - 1);
 	}
 }
 
@@ -74,5 +74,5 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 	max_level = binary_tree_height(tree) + 1;
 
 	for (current_level = 1; current_level <= max_level; current_level++)
-		binary_tree_postorder(tree, func, current_level);
+		binary_tree_post_order(tree, func, current_level);
 }

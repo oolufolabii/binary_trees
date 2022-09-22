@@ -17,16 +17,14 @@ int bst_helper_func(const binary_tree_t *tree, int min, int max)
 		return (0);
 
 	return (bst_helper_func(tree->left, min, tree->n - 1) &&
-		bst_helper_func(tree->right, tree->n + 1, max));
-
+			bst_helper_func(tree->right, tree->n + 1, max));
 }
-
 
 /**
  * binary_tree_is_bst - checker for a valid BST
- * 
+ *
  * @tree: pointer to binary tree to be checked
- * Return: 1 if BST otherwise 0. 
+ * Return: 1 if BST otherwise 0.
  */
 
 int binary_tree_is_bst(const binary_tree_t *tree)

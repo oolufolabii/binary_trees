@@ -26,10 +26,10 @@ void avl_func(avl_t **root, int *array, size_t low_end, size_t high_end)
 }
 
 /**
- * orted_array_to_avl - builds an AVL tree from an array
+ * sorted_array_to_avl - builds an AVL tree from an array
  *
- * @param array: pointer to the first element of the array to be converted
- * @param size: number of element in the array
+ * @array: pointer to the first element of the array to be converted
+ * @size: number of element in the array
  * Return: pointer to the root node of the created AVL tree, or NULL on failure
  */
 

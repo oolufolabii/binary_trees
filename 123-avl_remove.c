@@ -24,7 +24,6 @@ bst_t *bst_min_node(bst_t *root)
  * removing the desired value, otherwise NULL
  */
 
-
 avl_t *avl_remove(avl_t *root, int value)
 {
 	avl_t *temp = NULL;
@@ -52,9 +51,9 @@ avl_t *avl_remove(avl_t *root, int value)
 			free(root);
 			return (temp);
 		}
-		
+
 		temp = bst_min_node(root->right);
-		
+
 		root->n = temp->n;
 		root->right = avl_remove(root->right, temp->n);
 	}

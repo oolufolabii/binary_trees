@@ -56,7 +56,8 @@ bst_t *bst_insert(bst_t **tree, int value)
 /**
  * avl_insert - function that inserts a value in an AVL Tree
  *
- * @tree: double pointer to the root node of the AVL tree for inserting the value
+ * @tree: double pointer to the root node of the AVL tree for
+ * inserting the value
  * @value: value to store in the node to be inserted
  * Return: return a pointer to the created node, or NULL on failure
  */
